@@ -20,14 +20,14 @@ This document describes PHP 5+.
 // не вказувати тег закриття php, щоб запобігти випадковому виведенню.
 
 // Two forward slashes start a one-line comment.
-// Дві косі риски починають однорядковий коментар.
+// Дві скісні риски починають однорядковий коментар.
 
 # So will a hash (aka pound symbol) but // is more common
 # Те ж саме вказує символ #, але // є більш поширеним способом
 
 /*
      Surrounding text in slash-asterisk and asterisk-slash
-     makes it a multi-line comment.111
+     makes it a multi-line comment.
      Текст, який охоплений двознаками /* та */,
      робить цей текст багаторядковим коментарем.
 */
@@ -35,12 +35,12 @@ This document describes PHP 5+.
 // Use "echo" or "print" to print output
 // Використовуйте "echo" або "print", щоб надрукувати вивід
 print('Hello '); // Prints "Hello " with no line break
-                 // Видруковується "Hello " без розриву рядка
+                 // Друкує "Hello " без розриву рядка
 
 // () are optional for print and echo
 // () є необов’язковими для print та echo
 echo "World\n"; // Prints "World" with a line break
-                // Видруковується "World" із розривом рядка
+                // Друкує "World" із розривом рядка
 // (all statements must end with a semicolon)
 // (усі оператори мають закінчуватися крапкою з комою)
 
@@ -67,7 +67,7 @@ Hello World Again!
 
 // You don't have to (and cannot) declare variables.
 // Once you assign a value, PHP will create the variable with the right type.
-// Вам не потрібно (і не можна) оголошувати змінні.
+// Вам не потрібно (і не можливо) оголошувати змінні.
 // Коли ви присвоїте значення, PHP створить змінну з правильним типом.
 
 // Boolean values are case-insensitive
@@ -93,7 +93,7 @@ $int5 = 0b11111111; // 255 (a leading 0b denotes a binary number)
                     // 255 (0b на початку позначає двійкове число)
 
 // Floats (aka doubles)
-// Із рухомою десятковою крапкою (також подвійні)
+// Число із рухомою десятковою крапкою (також — подвійні)
 $float = 1.234;
 $float = 1.2e3;
 $float = 7E-10;
@@ -136,7 +136,7 @@ $dbl_quotes = "This is a $sgl_quotes."; // => 'This is a $String.'
                                         // => 'Це $String.'
 
 // Special characters are only escaped in double quotes
-// Спеціальні символи екрануються лише в подвійних лапках
+// Спеціальні позначення символів обробляються лише в подвійних лапках
 $escaped   = "This contains a \t tab character.";
 $unescaped = 'This just contains a slash and a t: \t';
 
@@ -147,7 +147,7 @@ $oranges = "I have ${number} oranges to eat.";
 $money = "I have $${number} in the bank.";
 
 // Since PHP 5.3, nowdocs can be used for uninterpolated multi-liners
-// Починаючи з PHP 5.3, nowdocs можна використовувати для неінтерпольованих багаторядкових даних
+// Починаючи з PHP 5.3, nowdocs можна використовувати для неінтерпольованих (без підстановки) багаторядкових даних
 $nowdoc = <<<'END'
 Multi line
 string
