@@ -63,7 +63,7 @@ Hello World Again!
 // followed by any number of letters, numbers, or underscores.
 // Змінні починаються з символа $.
 // Правильна назва змінної починається з літери або підкреслення,
-// за яким слід будь-яка кількість літер, цифр або підкреслень.
+// за яким йде будь-яка кількість літер, цифр або підкреслень.
 
 // You don't have to (and cannot) declare variables.
 // Once you assign a value, PHP will create the variable with the right type.
