@@ -71,7 +71,7 @@ Hello World Again!
 // Коли ви присвоїте значення, PHP створить змінну з правильним типом.
 
 // Boolean values are case-insensitive
-// Логічні значення регістру не враховуються
+// У логічних значеннях регістр символів не має значення
 $boolean = true;  // or TRUE or True
                   // або TRUE або True
 $boolean = FALSE; // or false or False
@@ -93,7 +93,7 @@ $int5 = 0b11111111; // 255 (a leading 0b denotes a binary number)
                     // 255 (0b на початку позначає двійкове число)
 
 // Floats (aka doubles)
-// Число із рухомою десятковою крапкою (також — подвійні)
+// Число із десятковою крапкою (також — подвійної точности)
 $float = 1.234;
 $float = 1.2e3;
 $float = 7E-10;
@@ -114,7 +114,7 @@ $quotient   = 2 / 1; // 2
                      // 2
 
 // Shorthand arithmetic
-// Скорочена аритметики
+// Скорочена аритметика
 $number = 0;
 $number += 1;      // Increment $number by 1
                    // Збільшити $number на 1
@@ -126,12 +126,12 @@ $number /= $float; // Divide and assign the quotient to $number
                    // Ділимо і присвоюємо частку $number
 
 // Strings should be enclosed in single quotes;
-// Рядки повинні бути взяті в одинарні лапки;
+// Рядки мають бути охоплені одинарними лапками;
 $sgl_quotes = '$String'; // => '$String'
                          // => '$String'
 
 // Avoid using double quotes except to embed other variables
-// Уникайте використання подвійних лапок, за винятком вставлення інших змінних
+// Не використовуйте подвійні лапки, за винятком підстановки інших змінних
 $dbl_quotes = "This is a $sgl_quotes."; // => 'This is a $String.'
                                         // => 'Це $String.'
 
@@ -141,7 +141,7 @@ $escaped   = "This contains a \t tab character.";
 $unescaped = 'This just contains a slash and a t: \t';
 
 // Enclose a variable in curly braces if needed
-// За потреби візьміть змінну у фігурні дужки
+// За потреби охопіть змінну фігурними дужками
 $apples = "I have {$number} apples to eat.";
 $oranges = "I have ${number} oranges to eat.";
 $money = "I have $${number} in the bank.";
@@ -161,7 +161,7 @@ $sgl_quotes
 END;
 
 // String concatenation is done with .
-// Конкатенація (обʼєднання) рядків виконується за допомогою .
+// Конкатенація (обʼєднання) рядків виконується за допомогою . (крапки)
 echo 'This string ' . 'is concatenated';
 
 // Strings can be passed in as parameters to echo
@@ -244,13 +244,13 @@ echo('Hello World!');
 // Prints Hello World! to stdout.
 // Stdout is the web page if running in a browser.
 // Друкує Hello World! до стандартного виводу.
-// Стандартний вихід — це веб-сторінка, якщо вона працює у браузері.
+// Стандартний вивід — це вебсторінка, якщо вона у браузері.
 
 print('Hello World!'); // The same as echo
                        // Те саме, що echo
 
 // echo and print are language constructs too, so you can drop the parentheses
-// echo та print також є мовними конструкціями, тому ви можете не вказувати дужки
+// echo та print є також вбудованими мовними конструкціями, тому ви можете не вказувати дужки
 echo 'Hello World!';
 print 'Hello World!';
 
